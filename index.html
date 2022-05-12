@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora em JS</title>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/var.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body id="bg-body" class="bg-light">
+
+  <section class="grid container">
+    <div id="calc-body" class="calc-body flex calc-bg-light">
+      <div>
+        <div id="calc-display" class="calc-display button-light"></div>
+        <div class="calc-display-flex">
+          <div id="calc-mini-display" class="calc-mini-display button-light"></div>
+        </div>
+        <div class="flex">
+          <a id="button-c" class="clear button sp-button-light">C</a>
+          <a id="button-plus-minus" class="plus-minus button sp-button-light">+/-</a>
+          <a id="button-percent" class="equation button sp-button-light">%</a>
+          <a id="button-slash" class="equation button sp-button-light">/</a>
+        </div>
+        <div class="flex">
+          <a id="button-7" class="number button button-light">7</a>
+          <a id="button-8" class="number button button-light">8</a>
+          <a id="button-9" class="number button button-light">9</a>
+          <a id="button-x" class="equation button sp-button-light">x</a>
+        </div>
+        <div class="flex">
+          <a id="button-4" class="number button button-light">4</a>
+          <a id="button-5" class="number button button-light">5</a>
+          <a id="button-6" class="number button button-light">6</a>
+          <a id="button-minus" class="equation button sp-button-light">-</a>
+        </div>
+        <div class="flex">
+          <a id="button-1" class="number button button-light">1</a>
+          <a id="button-2" class="number button button-light">2</a>
+          <a id="button-3" class="number button button-light">3</a>
+          <a id="button-plus" class="equation button sp-button-light">+</a>
+        </div>
+        <div class="flex">
+          <a id="button-zero" class="number button-zero button-light">0</a>
+          <a id="button-dot" class="number button button-light">.</a>
+          <a id="button-equal" class="equal button sp-button-light">=</a>
+        </div>
+      </div>
+    </div>
+    <form class="flex">
+      <label class="switch">
+        <input id="checkbox" type="checkbox">
+        <span class="slider round"></span>
+      </label>
+      <span class="text-dark button-light">Dark Mode</span>
+    </form>
+  </section>
+
+  <footer class="bg-dark">
+    <p class="button-dark">Desenvolvido por <strong>Janiele Damasceno - 2022</strong></p>
+    <div class="links-redes">
+      <a class="button-dark" target="_blank" href="https://www.linkedin.com/in/janiele-damasceno-bispo-40695b192/">Linkedin</a>
+      <a class="button-dark" target="_blank" href="https://github.com/janieledamasceno">GitHub</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

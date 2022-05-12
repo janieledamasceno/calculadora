@@ -1,0 +1,196 @@
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .container {
+    justify-content: center;
+    margin-top: 60px;
+  }
+  
+  input {
+    all: unset;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .grid {
+    display: grid;
+    gap: 20px;
+  }
+  
+  .calc-body {
+    justify-content: center;
+    width: 300px;
+    border-radius: 30px;
+    padding: 40px 20px;
+    font-family: "IBM Plex Mono", monospace;
+    box-shadow: 2px 2px 1px black,
+      -2px -2px 1px black;
+  }
+  
+  .calc-display {
+    width: 260px;
+    height: 50px;
+    padding: 8px 20px;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    text-align: end;
+    background-color: transparent;
+    border-radius: 50px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    box-shadow: inset 3px 3px 1px black,
+      inset -3px -3px 1px black;
+  }
+  
+  .calc-display-flex {
+    display: flex;
+    justify-content: end;
+    margin-right: 10px;
+  }
+  
+  .calc-mini-display {
+    width: 80px;
+    height: 20px;
+    padding: 5px 10px;
+    text-align: end;
+    background-color: transparent;
+    border-radius: 50px;
+    margin-left: 10px;
+    box-shadow: inset 3px 3px 2px black,
+      inset -3px -3px 2px black;
+  }
+  
+  .button,
+  .button-zero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 2px 2px 2px black,
+      -2px -2px 2px black;
+  }
+  
+  .button-zero {
+    width: 120px;
+    border-radius: 15px;
+  }
+  
+  .button:active,
+  .button-zero:active {
+    box-shadow: inset 2px 2px 1px black,
+      inset -2px -2px 1px black;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 28px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    transition: 0.4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.4s;
+  }
+  
+  input:checked + .slider {
+    background-color: rgb(145, 145, 145);
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(20px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  .text-dark {
+    font-size: 1.2rem;
+    padding: 5px;
+  }
+  
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer p {
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  .links-redes {
+    text-align: center;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .links-redes a {
+    text-decoration: none;
+    width: 70px;
+    padding: 5px 15px;
+    font-size: 1.2rem;
+    background-color: rgb(145, 145, 145);
+    border-radius: 10px;
+    transition: 0.4s;
+  }
+  
+  .links-redes a:hover {
+    background-color: white;
+  }
+  
+  @media (max-width: 800px) {
+    .button,
+    .button-zero {
+      cursor: none;
+    }
+    .slider {
+      cursor: none;
+    }
+    .links-redes a {
+      font-size: 1rem;
+    }
+  }
